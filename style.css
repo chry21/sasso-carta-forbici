@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100;1,200&family=Raleway:ital,wght@1,100&family=Silkscreen&display=swap');
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 33%, 47%, 50% {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0088ff,
+    0 0 82px #0088ff,
+    0 0 92px #0088ff,
+    0 0 102px #0088ff,
+    0 0 151px #0088ff;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+}
+
+body {
+    background-color: black;
+    background-image: url("imgs/homeBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    margin-top: 190px;
+    font-size: 90px;
+    font-family: 'Exo 2', sans-serif;  
+    font-weight: 180; 
+    animation: flicker 0.9s infinite alternate;
+    position: relative;
+    right: 185px;
+    top: 170px;  
+}
+
+#tableBtn {
+    position: absolute;
+    top: 53%;
+    left: 33%;
+    height: 40px;
+    width: 300px;
+    font-family:'Exo 2', sans-serif;
+    background-color: transparent;
+    font-size: 30px;
+    color: azure;
+    text-shadow: 
+        0 0 2px #1a94ff,
+        0 0 10px #1a94ff,
+        0 0 20px #1a94ff,
+        0 0 42px #1a94ff,
+        0 0 60px #1a94ff,
+        0 0 92px #1a94ff,
+        0 0 300px #f9cefb,
+        0 0 500px #fffeff;
+
+    border-color: #007ff5;    
+    box-shadow: 
+        0 0 1px #1a94ff,
+        0 0 2px #1a94ff,
+        0 0 3px #1a94ff,
+        0 0 4px #1a94ff,
+        0 0 5px #ffffff,
+        0 0 6px #ffffff,
+        0 0 7px #ffffff,
+        0 0 8px #fffeff;  
+} 
+
+#subtitle {
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    font-family: 'Exo 2', sans-serif; 
+    position: relative; 
+    bottom: 40px;
+    text-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #fff, 
+            0 0 1px #fff, 
+            0 0 5px #f5e105,                            
+            0 0 8px #f5e105, 
+            0 0 10px #f5e105, 
+            0 0 30px #f5e105,
+            0 0 60px #f5e105;                                                        
+} 
+
+#playBtn {
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    height: 60px;
+    width: 230px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    font-size: 20px;
+    font-family:'Exo 2', sans-serif; 
+    text-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #fff, 
+            0 0 1px #fff, 
+            0 0 5px #fff, 
+            0 0 8px #fff, 
+            0 0 10px #fff, 
+            0 0 30px #fff,
+            0 0 60px #fff;
+    box-shadow: 
+            0 0 5px #fff, 
+            0 0 5px #fff, 
+            0 0 5px #fff, 
+            0 0 5px #fff, 
+            0 0 1px #fff, 
+            0 0 1px #fff, 
+            0 0 0px #fff,
+            0 0 55px #fff;
+}
+
+#divBtns {
+    display: none;
+    justify-content: space-between;
+}
+
+/*player and computer score------------------------------------------------------*/
+
+#divIcons {
+    display: none;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    gap: 70px;
+}
+
+#playerIcon {
+    width: 70px;
+    height: 70px;
+}
+
+#computerIcon {
+    width: 70px;
+    height: 70px;
+}
+
+#divScore {
+    display: none;
+    justify-content: center;
+    gap: 120px;
+    height: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+#playerScore, #computerScore {
+    color: white;
+    font-size: 60px;
+    font-family: 'Teko', sans-serif;
+}
+
+/*player and computer buttons----------------------------------------------------*/
+
+#playerBtns, #computerBtns {
+    display: flex;
+    margin-top: 90px;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+#playerBtns {
+    margin-left: 150px;
+}
+
+#computerBtns {
+    margin-right: 150px;
+}
+
+#playerBtns button {
+    background-size: 150px;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 150px;
+}
+
+#computerBtns button {
+    background-size: 150px;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 150px;
+}
+
+.rockBtns {
+    background-image: url("imgs/rock-icon.jpg");
+}
+
+.paperBtns {
+    background-image: url("imgs/paper-icon.jpg");
+}
+
+.scissorsBtns {
+    background-image: url("imgs/scissors-icon.jpg");
+}
+
+#playerRockBtn:hover, #computerRockBtn  {
+    border: 3px solid #ff008c;
+    box-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #ff008c, 
+            0 0 3px #ff008c, 
+            0 0 5px #ff008c, 
+            0 0 8px #ff008c, 
+            0 0 30px #ff008c, 
+            0 0 60px #ff008c,
+            0 0 80px #ff008c;
+}
+
+#playerPaperBtn:hover, #computerPaperBtn {
+    border: 3px solid #0059ff;
+    box-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #0059ff, 
+            0 0 3px #0059ff, 
+            0 0 5px #0059ff, 
+            0 0 8px #0059ff, 
+            0 0 30px #0059ff, 
+            0 0 60px #0059ff,
+            0 0 80px #0059ff;
+}
+
+#playerScissorsBtn:hover, #computerScissorsBtn {
+    border: 3px solid #f6ff00;
+    box-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #f6ff00, 
+            0 0 3px #f6ff00, 
+            0 0 5px #f6ff00, 
+            0 0 8px #f6ff00, 
+            0 0 15px #f6ff00, 
+            0 0 25px #f6ff00,
+            0 0 50px #f6ff00;
+}
+
+/*
+{
+    border: 3px solid #ff008c;
+    box-shadow: 
+            0 0 1px #fff, 
+            0 0 2px #ff008c, 
+            0 0 3px #ff008c, 
+            0 0 5px #ff008c, 
+            0 0 8px #ff008c, 
+            0 0 30px #ff008c, 
+            0 0 60px #ff008c,
+            0 0 80px #ff008c;    
+}
+*/
+/*round phrase and winner logo */
+#roundWinner{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 41.5%;
+}
+
+#winnerWin{
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    text-shadow:
+            0 0 1px #fff, 
+            0 0 2px #fff, 
+            0 0 3px #fff, 
+            0 0 5px #004cff, 
+            0 0 8px #004cff, 
+            0 0 30px #004cff, 
+            0 0 60px #004cff,
+            0 0 80px #004cff;
+}
+
+#winnerLose{
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    text-shadow:
+            0 0 1px #fff, 
+            0 0 2px #fff, 
+            0 0 3px #fff, 
+            0 0 5px #ff0000, 
+            0 0 8px #ff0000, 
+            0 0 30px #ff0000, 
+            0 0 60px #ff0000,
+            0 0 80px #ff0000;
+}
